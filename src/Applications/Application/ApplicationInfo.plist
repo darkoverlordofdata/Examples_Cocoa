@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "My Application";
+    ApplicationIcon = "Application.tiff";
+    ApplicationName = Application;
+    ApplicationRelease = "1.0.0";
+    Authors = (
+	"darkoverlordofdata"
+    );
+    Copyright = "Copyright (C) 2022 BSD 2 clause.";
+    CopyrightDescription = "Released under BSD 2 clause";
+    FullVersionID = "1.0.0";
+    NSExecutable = Application;
+    NSIcon = "Application.tiff";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    URL = "http://darkoverlordofdata.com/application/";
+}

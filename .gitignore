@@ -2,6 +2,7 @@
 build
 build*
 lib
+obj
 
 # macOS files
 .DS_Store
@@ -20,3 +21,6 @@ CMakeLists.txt.user
 
 # QT build files
 build-*
+
+# GNUstep appdir 
+*.app
