@@ -1,5 +1,7 @@
 #include <Cocoa/Cocoa.h>
 
+//https://github.com/thezerobit/gnustep-gui-sony/tree/master/Source
+
 @interface Window : NSWindow {
   NSButton* button1;
   NSButton* button2;
@@ -14,6 +16,27 @@
 - (IBAction) OnButton1Click:(id)sender;
 - (IBAction) OnButton2Click:(id)sender;
 @end
+
+//https://developer.apple.com/documentation/appkit/nsbezelstyle?language=objc
+
+// typedef enum NSBezelStyle : NSUInteger {
+//     ...
+// } NSBezelStyle;
+
+#define NSBezelStyleRounded 1
+#define NSBezelStyleRegularSquare 2
+#define NSBezelStyleShadowlessSquare 6
+#define NSBezelStyleSmallSquare 10
+#define NSBezelStyleRoundRect 12
+#define NSBezelStyleInline 15
+#define NSBezelStyleRecessed 13
+#define NSBezelStyleDisclosure 5
+#define NSBezelStyleRoundedDisclosure 14
+#define NSBezelStyleCircular 7
+#define NSBezelStyleHelpButton 9
+#define NSBezelStyleTexturedRounded 12
+#define NSBezelStyleTexturedSquare 8
+
 
 @implementation Window
 - (instancetype) init {

@@ -1,13 +1,13 @@
-# HelloWorld
+# Application
 
-The classic first application "Hello World".
+This example demonstrates the use of NSApplication class.
 
 # Source
 
-[HelloWorld.m](./HelloWorld.m)
+[Application.m](./Application.m)
 
 [CMakeLists.txt](./CMakeLists.txt)
 
 # Output
 
-![Screenshot](../../../docs/Pictures/HelloWorld.png)
+![Screenshot](../../../docs/Pictures/Application.png)

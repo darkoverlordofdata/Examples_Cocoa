@@ -11,6 +11,9 @@
 - (BOOL)windowShouldClose:(id)sender;
 @end
 
+#define NSButtonTypeSwitch NSSwitchButton
+#define NSButtonTypeOnOff  NSOnOffButton
+
 @implementation Window
 - (instancetype)init {
   checkBox1 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 250, 105, 20)] autorelease];
@@ -41,7 +44,7 @@
   checkBox4 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 160, 105, 25)] autorelease];
   [checkBox4 setTitle:@"Checked"];
   [checkBox4 setButtonType:NSButtonTypeOnOff];
-  [checkBox4 setBezelStyle:NSBezelStyleRounded];
+  // [checkBox4 setBezelStyle:NSBezelStyleRounded];
   [checkBox4 setTarget:self];
   [checkBox4 setAction:@selector(OnCheckBox4Click:)];
   [checkBox4 setAutoresizingMask:NSViewMaxXMargin | NSViewMinYMargin];
@@ -50,7 +53,7 @@
   checkBox5 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 130, 105, 25)] autorelease];
   [checkBox5 setTitle:@"Unchecked"];
   [checkBox5 setButtonType:NSButtonTypeOnOff];
-  [checkBox5 setBezelStyle:NSBezelStyleRounded];
+  // [checkBox5 setBezelStyle:NSBezelStyleRounded];
   [checkBox5 setTarget:self];
   [checkBox5 setAction:@selector(OnCheckBox5Click:)];
   [checkBox5 setAutoresizingMask:NSViewMaxXMargin | NSViewMinYMargin];
