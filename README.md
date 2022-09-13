@@ -1,5 +1,8 @@
 # Cocoa Examples
 
+Use Objective-c for GUI programming. No Gorm or Xcode required - everything is built usinga a text editor and command line. 
+
+VCCode config included, use ctrl-shift-B to build, F5 to debug using CodeLLDB plugin.
 
 this is a work in progress...
 
