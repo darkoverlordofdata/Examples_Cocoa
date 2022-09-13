@@ -11,7 +11,7 @@ obj
 .idea
 
 # Visual Studio Code files
-.vscode
+#.vscode
 
 # CLion build files
 cmake-build-*
