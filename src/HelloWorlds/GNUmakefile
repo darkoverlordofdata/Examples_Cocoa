@@ -1,9 +1,9 @@
 #
 #  Main Makefile for Examples_Cocoa
 #  
-#  Copyright (C) 2006, 2022 MIT License
+#  Copyright (C) 2022 MIT License
 #
-#  Written by:	gammasoft71 & darkoverlordofdata
+#  Written by:	darkoverlordofdata
 #
 #
 

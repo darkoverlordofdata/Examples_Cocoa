@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "My SaveFileDialog";
+    ApplicationIcon = "SaveFileDialog.tiff";
+    ApplicationName = SaveFileDialog;
+    ApplicationRelease = "1.0.0";
+    Authors = (
+	"darkoverlordofdata"
+    );
+    Copyright = "Copyright (C) 2022 BSD 2 clause.";
+    CopyrightDescription = "Released under BSD 2 clause";
+    FullVersionID = "1.0.0";
+    NSExecutable = SaveFileDialog;
+    NSIcon = "SaveFileDialog.tiff";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    URL = "http://darkoverlordofdata.com/application/";
+}

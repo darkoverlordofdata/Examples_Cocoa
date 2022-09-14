@@ -1,5 +1,7 @@
 #include <Cocoa/Cocoa.h>
 
+#define NSEventMaskAny NSUIntegerMax
+
 @interface Window : NSWindow
 - (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)backingStoreType defer:(BOOL)flag;
 - (BOOL)windowShouldClose:(id)sender;
@@ -9,7 +11,7 @@
 - (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)backingStoreType defer:(BOOL)flag {
   [super initWithContentRect:contentRect styleMask:style backing:backingStoreType defer:flag];
 
-  NSColor * white = [NSColor greenColor];
+  NSColor * white = [NSColor whiteColor];
   NSRect rect1 = NSMakeRect (21, 21, 210, 210);
   [white set];
   NSRectFill (rect1);
@@ -23,13 +25,14 @@
 @end
 
 int main(int argc, char* argv[]) {
+  // Creates Application and asociate menubar and specific menus.
+  [NSApplication sharedApplication];
+
   // Create Window
   Window* window1 = [[[Window alloc] initWithContentRect:NSMakeRect(100, 100, 300, 300) styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable backing:NSBackingStoreBuffered defer:NO] autorelease];
   [window1 setTitle:@"Drawing Example"];
   [window1 setIsVisible:YES];
   
-  // Creates Application and asociate menubar and specific menus.
-  [NSApplication sharedApplication];
 
   // Set window as mainWindow
   [window1 makeMainWindow];

@@ -1,5 +1,19 @@
 #include <Cocoa/Cocoa.h>
 
+#define NSBezelStyleRounded 1
+#define NSBezelStyleRegularSquare 2
+#define NSBezelStyleShadowlessSquare 6
+#define NSBezelStyleSmallSquare 10
+#define NSBezelStyleRoundRect 12
+#define NSBezelStyleInline 15
+#define NSBezelStyleRecessed 13
+#define NSBezelStyleDisclosure 5
+#define NSBezelStyleRoundedDisclosure 14
+#define NSBezelStyleCircular 7
+#define NSBezelStyleHelpButton 9
+#define NSBezelStyleTexturedRounded 12
+#define NSBezelStyleTexturedSquare 8
+
 @interface Window : NSWindow {
   NSTextField* label;
   NSButton* button;

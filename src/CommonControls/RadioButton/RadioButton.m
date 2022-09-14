@@ -1,5 +1,7 @@
 #include <Cocoa/Cocoa.h>
 
+#define NSButtonTypeRadio NSRadioButton
+
 @interface Window : NSWindow {
   NSButton* radioButton1;
   NSButton* radioButton2;

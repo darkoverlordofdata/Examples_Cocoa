@@ -1,6 +1,6 @@
 # Cocoa Examples
 
-Use Objective-c for GUI programming. No Gorm or Xcode required - everything is built usinga a text editor and command line. 
+Use Objective-c for GUI programming. No Gorm required - everything is built using just a text editor and command line. 
 
 VSCode config included, use ctrl-shift-B to build, F5 to debug using CodeLLDB plugin.
 
@@ -34,7 +34,7 @@ cd plugins-themes-nesedahrik
 cp NesedahRik.theme ~/GNUstep/Library/Themes
 defaults write NSGlobalDomain GSTheme NesedahRik
 ```
-Modified to work on both macOS and GNUstep on FreeBSD and Linux
+Modified to work using GNUstep on FreeBSD and Linux
 
 
 

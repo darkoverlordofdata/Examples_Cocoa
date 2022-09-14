@@ -11,27 +11,27 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# Button
+# SwitchButton
 #
 VERSION = 1.0.0
-PACKAGE_NAME = Button
-APP_NAME = Button
-Button_APPLICATION_ICON = Button.tiff
+PACKAGE_NAME = SwitchButton
+APP_NAME = SwitchButton
+SwitchButton_APPLICATION_ICON = SwitchButton.tiff
 
 
 #
 # Resource files
 #
-Button_RESOURCE_FILES = \
-Resources/Button.tiff 
+SwitchButton_RESOURCE_FILES = \
+Resources/SwitchButton.tiff 
 
 
 
 #
 # Class files
 #
-Button_OBJC_FILES = \
-Button.m 
+SwitchButton_OBJC_FILES = \
+SwitchButton.m 
 
 
 #

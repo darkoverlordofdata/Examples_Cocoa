@@ -1,11 +1,12 @@
 #
 #  Main Makefile for Examples_Cocoa
 #  
-#  Copyright (C) 2006, 2022 MIT License
+#  Copyright (C) 2022 MIT License
 #
-#  Written by:	gammasoft71 & darkoverlordofdata
+#  Written by:	darkoverlordofdata
 #
 #
+
 
 VERSION = 1.1.0
 PACKAGE_NAME = Examples_Cocoa

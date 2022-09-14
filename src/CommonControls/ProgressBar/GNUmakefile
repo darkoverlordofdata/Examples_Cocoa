@@ -11,27 +11,27 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# Button
+# ProgressBar
 #
 VERSION = 1.0.0
-PACKAGE_NAME = Button
-APP_NAME = Button
-Button_APPLICATION_ICON = Button.tiff
+PACKAGE_NAME = ProgressBar
+APP_NAME = ProgressBar
+ProgressBar_APPLICATION_ICON = ProgressBar.tiff
 
 
 #
 # Resource files
 #
-Button_RESOURCE_FILES = \
-Resources/Button.tiff 
+ProgressBar_RESOURCE_FILES = \
+Resources/ProgressBar.tiff 
 
 
 
 #
 # Class files
 #
-Button_OBJC_FILES = \
-Button.m 
+ProgressBar_OBJC_FILES = \
+ProgressBar.m 
 
 
 #

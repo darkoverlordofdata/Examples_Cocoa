@@ -11,27 +11,27 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# Button
+# RadioButton
 #
 VERSION = 1.0.0
-PACKAGE_NAME = Button
-APP_NAME = Button
-Button_APPLICATION_ICON = Button.tiff
+PACKAGE_NAME = RadioButton
+APP_NAME = RadioButton
+RadioButton_APPLICATION_ICON = RadioButton.tiff
 
 
 #
 # Resource files
 #
-Button_RESOURCE_FILES = \
-Resources/Button.tiff 
+RadioButton_RESOURCE_FILES = \
+Resources/RadioButton.tiff 
 
 
 
 #
 # Class files
 #
-Button_OBJC_FILES = \
-Button.m 
+RadioButton_OBJC_FILES = \
+RadioButton.m 
 
 
 #

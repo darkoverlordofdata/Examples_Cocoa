@@ -11,27 +11,27 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# Button
+# TextBox
 #
 VERSION = 1.0.0
-PACKAGE_NAME = Button
-APP_NAME = Button
-Button_APPLICATION_ICON = Button.tiff
+PACKAGE_NAME = TextBox
+APP_NAME = TextBox
+TextBox_APPLICATION_ICON = TextBox.tiff
 
 
 #
 # Resource files
 #
-Button_RESOURCE_FILES = \
-Resources/Button.tiff 
+TextBox_RESOURCE_FILES = \
+Resources/TextBox.tiff 
 
 
 
 #
 # Class files
 #
-Button_OBJC_FILES = \
-Button.m 
+TextBox_OBJC_FILES = \
+TextBox.m 
 
 
 #
