@@ -37,5 +37,43 @@ defaults write NSGlobalDomain GSTheme NesedahRik
 Modified to work using GNUstep on FreeBSD and Linux
 
 
+## Gap
 
+* Some enumerations are not found or remapped
+* Asynchronous methods not avalable
 
+## Working 
+
+* Application
+* Button
+* CheckBox
+* Label
+* ListBox
+* PictureBox
+* ProgressBar
+* RadioButton
+* SwitchButton
+* TextBox
+* ToggleButton
+* TrackBar
+* ColorDialog
+* FolderBrowserDialog
+* FontDialog
+* MessageBox
+* OpenFileDialog
+* SaveFileDialog
+* Timer
+* GroupBox
+* Panel
+* TabControl
+* Window
+* HelloWorld
+
+## Not Working
+
+* ApplicationWithMessageLoop: events
+* ApplicationIde: uses Mach
+* Drawing: not drawing 
+* WindowAndMessages: events  
+* MainMenu: ???
+* ColoredTabPages: ???
