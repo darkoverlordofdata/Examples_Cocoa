@@ -11,28 +11,36 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# PictureBox
+# HelloBing
 #
 VERSION = 1.0.0
-PACKAGE_NAME = PictureBox
-APP_NAME = PictureBox
-PictureBox_APPLICATION_ICON = PictureBox.tiff
+PACKAGE_NAME = HelloBing
+APP_NAME = HelloBing
+HelloBing_APPLICATION_ICON = HelloBing.tiff
 
 
 #
 # Resource files
 #
-PictureBox_RESOURCE_FILES = \
-Resources/PictureBox.tiff \
+HelloBing_RESOURCE_FILES = \
+Resources/HelloBing.tiff \
 Resources/Logo.png \
 Resources/th.jpeg
 
+#
+# Header files
+#
+HelloBing_HEADER_FILES = \
+Window.h \
+Controller.h
 
 #
 # Class files
 #
-PictureBox_OBJC_FILES = \
-PictureBox.m 
+HelloBing_OBJC_FILES = \
+main.m \
+Window.m \
+Controller.m
 
 
 #

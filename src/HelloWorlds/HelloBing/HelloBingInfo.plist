@@ -1,0 +1,17 @@
+{
+    ApplicationDescription = "Bing Picture Of the Day";
+    ApplicationIcon = "HelloBing.tiff";
+    ApplicationName = HelloBing;
+    ApplicationRelease = "1.0.0";
+    Authors = (
+	"darkoverlordofdata"
+    );
+    Copyright = "Copyright (C) 2022 BSD 2 clause.";
+    CopyrightDescription = "Released under BSD 2 clause";
+    FullVersionID = "1.0.0";
+    NSExecutable = HelloBing;
+    NSIcon = "HelloBing.tiff";
+    NSPrincipalClass = NSApplication;
+    NSRole = Application;
+    URL = "http://darkoverlordofdata.com/application/";
+}
