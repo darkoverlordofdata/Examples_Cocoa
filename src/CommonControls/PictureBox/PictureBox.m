@@ -1,4 +1,19 @@
-#include <Cocoa/Cocoa.h>
+#import <Cocoa/Cocoa.h>
+
+@interface NSWindow (NSWindowSetIsVisible)
+- (void)setIsVisible: (BOOL) yes_no;
+@end
+
+@implementation NSWindow (NSWindowSetIsVisible)
+- (void)setIsVisible: (BOOL) yes_no {
+  if (yes_no) {
+      [self center];
+      [self orderFrontRegardless];
+      [self makeKeyWindow];
+      [self display];
+  }
+}
+@end
 
 @interface Window : NSWindow {
   NSImageView* pictureBox1;
@@ -18,6 +33,11 @@
   [self setTitle:@"PictureBox Example"];
   [[self contentView] addSubview:pictureBox1];
   [self setIsVisible:YES];
+  // [self center];
+  // [self orderFrontRegardless];
+  // [self makeKeyWindow];
+  // [self display];
+
   return self;
 }
 
