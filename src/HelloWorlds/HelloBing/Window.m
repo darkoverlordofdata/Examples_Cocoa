@@ -1,4 +1,6 @@
 #import <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
+
 #import "Window.h"
 
 @implementation Window
