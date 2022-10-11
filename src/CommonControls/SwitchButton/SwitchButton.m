@@ -1,4 +1,5 @@
 #include <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
 
 @interface Window : NSWindow {
   NSSwitch* switchButton1;

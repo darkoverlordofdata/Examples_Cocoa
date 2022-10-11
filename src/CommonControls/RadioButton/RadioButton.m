@@ -1,6 +1,5 @@
 #include <Cocoa/Cocoa.h>
-
-#define NSButtonTypeRadio NSRadioButton
+#import <NSPatch/NSPatch.h>
 
 @interface Window : NSWindow {
   NSButton* radioButton1;
@@ -13,7 +12,7 @@
 
 @implementation Window
 - (instancetype)init {
-  NSButton* radioButton1 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 245, 105, 20)] autorelease];
+  radioButton1 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 245, 105, 20)] autorelease];
   [radioButton1 setTitle:@"radioButton 1"];
   [radioButton1 setButtonType:NSButtonTypeRadio];
   [radioButton1 setTarget:self];
@@ -21,7 +20,7 @@
   [radioButton1 setAutoresizingMask:NSViewMaxXMargin | NSViewMinYMargin];
   [radioButton1 setState:NSControlStateValueOn];
   
-  NSButton* radioButton2 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 215, 105, 20)] autorelease];
+  radioButton2 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 215, 105, 20)] autorelease];
   [radioButton2 setTitle:@"radioButton 2"];
   [radioButton2 setButtonType:NSButtonTypeRadio];
   [radioButton2 setTarget:self];
@@ -29,7 +28,7 @@
   [radioButton2 setAutoresizingMask:NSViewMaxXMargin | NSViewMinYMargin];
   [radioButton2 setState:NSControlStateValueOff];
   
-  NSButton* radioButton3 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 185, 105, 20)] autorelease];
+  radioButton3 = [[[NSButton alloc] initWithFrame:NSMakeRect(30, 185, 105, 20)] autorelease];
   [radioButton3 setTitle:@"radioButton 3"];
   [radioButton3 setButtonType:NSButtonTypeRadio];
   [radioButton3 setTarget:self];

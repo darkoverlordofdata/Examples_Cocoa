@@ -73,6 +73,7 @@ Modified to work using GNUstep on FreeBSD and Linux
 
 * ApplicationWithMessageLoop: events
 * ApplicationIde: uses Mach
+* ComboBox
 * Drawing: not drawing 
 * WindowAndMessages: events  
 * MainMenu: ???

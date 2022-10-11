@@ -1,4 +1,6 @@
 #include <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
+
 
 @interface Window : NSWindow {
   NSButton* checkBox1;
@@ -11,8 +13,7 @@
 - (BOOL)windowShouldClose:(id)sender;
 @end
 
-#define NSButtonTypeSwitch NSSwitchButton
-#define NSButtonTypeOnOff  NSOnOffButton
+
 
 @implementation Window
 - (instancetype)init {

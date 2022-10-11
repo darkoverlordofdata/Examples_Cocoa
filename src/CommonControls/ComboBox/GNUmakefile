@@ -11,27 +11,27 @@ endif
 include $(GNUSTEP_MAKEFILES)/common.make
 
 #
-# Button
+# ComboBox
 #
 VERSION = 1.0.0
-PACKAGE_NAME = Button
-APP_NAME = Button
-Button_APPLICATION_ICON = Button.tiff
+PACKAGE_NAME = ComboBox
+APP_NAME = ComboBox
+ComboBox_APPLICATION_ICON = ComboBox.tiff
 
 
 #
 # Resource files
 #
-Button_RESOURCE_FILES = \
-Resources/Button.tiff 
+ComboBox_RESOURCE_FILES = \
+Resources/ComboBox.tiff 
 
 
 
 #
 # Class files
 #
-Button_OBJC_FILES = \
-Button.m 
+ComboBox_OBJC_FILES = \
+ComboBox.m 
 
 
 #
