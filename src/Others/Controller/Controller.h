@@ -7,7 +7,7 @@
 {
     // NSWindow *window;
     Window *window;
-    NSTextField *label;
+    // NSTextField *label;
 
 }
 
