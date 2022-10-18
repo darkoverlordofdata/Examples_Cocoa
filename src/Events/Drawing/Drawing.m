@@ -1,6 +1,5 @@
 #include <Cocoa/Cocoa.h>
-
-#define NSEventMaskAny NSUIntegerMax
+#import <NSPatch/NSPatch.h>
 
 @interface Window : NSWindow
 - (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)backingStoreType defer:(BOOL)flag;
@@ -51,6 +50,7 @@ int main(int argc, char* argv[]) {
       // run your own dispatcher...
       [NSApp sendEvent:event];
       [NSApp updateWindows];
+      NSLog(@"event = %@", event);
     } else if (hasIdle) {
       // run idle method...
     }

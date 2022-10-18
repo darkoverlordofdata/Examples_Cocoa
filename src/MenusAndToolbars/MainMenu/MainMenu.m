@@ -1,14 +1,6 @@
 #include <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
 
-#define NSEventModifierFlagCapsLock (1 << 16)
-#define NSEventModifierFlagShift (1 << 17)
-#define NSEventModifierFlagControl (1 << 18)
-#define NSEventModifierFlagOption  (1 << 19)
-#define NSEventModifierFlagCommand (1 << 20)
-#define NSEventModifierFlagNumericPad (1 << 21)
-#define NSEventModifierFlagHelp (1 << 22)
-#define NSEventModifierFlagFunction (1 << 23)
-#define NSEventModifierFlagDeviceIndependentFlagsMask = 0xffff0000UL
 
 @interface Window : NSWindow {
 }

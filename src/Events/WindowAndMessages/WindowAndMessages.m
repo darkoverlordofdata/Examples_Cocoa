@@ -1,12 +1,14 @@
 #include <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
+#include <AppKit/AppKit.h>
 #include <syslog.h>
 
 @interface Window : NSWindow {
 }
 - (instancetype)init;
 - (void)windowDidDeMiniaturize:(NSNotification*)sender;
-- (void)windowDidEnterFullScreen:(NSNotification*)notification;
-- (void)windowDidExitFullScreen:(NSNotification*)notification;
+// - (void)windowDidEnterFullScreen:(NSNotification*)notification;
+// - (void)windowDidExitFullScreen:(NSNotification*)notification;
 - (void)windowDidMove:(NSNotification*)notification;
 - (void)windowDidResize:(NSNotification*)notification;
 - (void)windowDidMiniaturize:(NSNotification*)sender;
@@ -19,8 +21,8 @@
   [self setTitle:@"Window and Messages"];
   [self setIsVisible:YES];
 
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidEnterFullScreen:) name:NSWindowDidEnterFullScreenNotification object:self];
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidExitFullScreen:) name:NSWindowDidExitFullScreenNotification object:self];
+  // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidEnterFullScreen:) name:NSWindowDidEnterFullScreenNotification object:self];
+  // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidExitFullScreen:) name:NSWindowDidExitFullScreenNotification object:self];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidMove:) name:NSWindowDidMoveNotification object:self];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidResize:) name:NSWindowDidResizeNotification object:self];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidMiniaturize:) name:NSWindowDidMiniaturizeNotification object:self];
@@ -33,13 +35,13 @@
   syslog(LOG_EMERG | LOG_USER, "Resize");
 }
 
-- (void)windowDidEnterFullScreen:(NSNotification*)notification {
-  syslog(LOG_EMERG | LOG_USER, "Enter full screen");
-}
+// - (void)windowDidEnterFullScreen:(NSNotification*)notification {
+//   syslog(LOG_EMERG | LOG_USER, "Enter full screen");
+// }
 
-- (void)windowDidExitFullScreen:(NSNotification*)notification {
-  syslog(LOG_EMERG | LOG_USER, "Exit full screen");
-}
+// - (void)windowDidExitFullScreen:(NSNotification*)notification {
+//   syslog(LOG_EMERG | LOG_USER, "Exit full screen");
+// }
 
 - (void)windowDidMove:(NSNotification*)notification {
   syslog(LOG_EMERG | LOG_USER, "Move");

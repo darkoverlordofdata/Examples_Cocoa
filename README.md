@@ -67,14 +67,14 @@ Modified to work using GNUstep on FreeBSD and Linux
 * Panel
 * TabControl
 * Window
+* Drawing
+* WindowAndMessages
 * HelloWorld
+* MainMenu
 
 ## Not Working
 
-* ApplicationWithMessageLoop: events
-* ApplicationIde: uses Mach
-* ComboBox
-* Drawing: not drawing 
-* WindowAndMessages: events  
-* MainMenu: ???
-* ColoredTabPages: ???
+* ApplicationWithMessageLoop: use of undeclared identifier (EVENTS)
+* ApplicationIdle: uses Mach
+* ComboBox - no content
+* ColoredTabPages: No CALayer support in  GNUstep

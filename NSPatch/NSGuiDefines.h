@@ -32,3 +32,16 @@
 #define NSEventModifierFlagHelp (1 << 22)
 #define NSEventModifierFlagFunction (1 << 23)
 #define NSEventModifierFlagDeviceIndependentFlagsMask = 0xffff0000UL
+
+
+#define NSEventMaskAny NSUIntegerMax
+
+#define NSAlertStyleCritical 2
+#define NSAlertStyleInformational 1
+#define NSAlertStyleWarning 0
+
+#define NSTabPositionNone 0
+#define NSTabPositionTop 1
+#define NSTabPositionLeft 2
+#define NSTabPositionBottom 3
+#define NSTabPositionRight 4

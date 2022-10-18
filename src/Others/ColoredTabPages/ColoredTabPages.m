@@ -1,4 +1,6 @@
 #include <Cocoa/Cocoa.h>
+#import <NSPatch/NSPatch.h>
+
 
 @interface Window : NSWindow {
   NSTabViewItem* tabPageRed;
@@ -13,24 +15,24 @@
 
 @implementation Window
 - (instancetype)init {
-  NSTabViewItem* tabPageRed = [[NSTabViewItem alloc] init];
+  tabPageRed = [[NSTabViewItem alloc] init];
   [tabPageRed setLabel:@"Red"];
-  [[tabPageRed view] setWantsLayer:YES];
+  [[tabPageRed view] setWantsLayer:YES;
   [[[tabPageRed view] layer] setBackgroundColor:[NSColor redColor].CGColor];
 
   tabPageGreen = [[NSTabViewItem alloc] init];
   [tabPageGreen setLabel:@"Green"];
-  [[tabPageGreen view] setWantsLayer:YES];
-  [[[tabPageGreen view] layer] setBackgroundColor:[NSColor colorWithRed:0 green:0.5 blue:0 alpha:1].CGColor];
+  [[tabPageGreen view] setWantsLayer:YES;
+  [[[tabPageGreen view] layer] setBackgroundColor:[NSColor colorWithCalibratedRed:0 green:0.5 blue:0 alpha:1].CGColor];
 
   tabPageBlue = [[NSTabViewItem alloc] init];
   [tabPageBlue setLabel:@"Blue"];
-  [[tabPageBlue view] setWantsLayer:YES];
+  [[tabPageBlue view] setWantsLayer:YES;
   [[[tabPageBlue view] layer] setBackgroundColor:[NSColor blueColor].CGColor];
 
   tabPageYellow = [[NSTabViewItem alloc] init];
   [tabPageYellow setLabel:@"Yellow"];
-  [[tabPageYellow view] setWantsLayer:YES];
+  [[tabPageYellow view] setWantsLayer:YES;
   [[[tabPageYellow view] layer] setBackgroundColor:[NSColor yellowColor].CGColor];
 
   tabControl = [[NSTabView alloc] initWithFrame:NSMakeRect(10, 10, 370, 250)];

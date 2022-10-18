@@ -1,7 +1,7 @@
-#import <Cocoa/Cocoa.h>
-#import "Controller.h"
-#import "Window.h"
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
+#import "Controller.h"
 
 int main(int argc, const char *argv[]) 
 {
@@ -15,4 +15,3 @@ int main(int argc, const char *argv[])
 
   }
 }
-

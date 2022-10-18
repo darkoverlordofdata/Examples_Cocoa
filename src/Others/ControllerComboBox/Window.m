@@ -1,13 +1,4 @@
-#include <Cocoa/Cocoa.h>
-#import <NSPatch/NSPatch.h>
-
-@interface Window : NSWindow  {
-  NSComboBox* comboBox1;
-  NSComboBox* comboBox2;
-}
-- (instancetype)init;
-- (BOOL)windowShouldClose:(id)sender;
-@end
+#import "Window.h"
 
 @implementation Window
 - (instancetype)init {
@@ -16,9 +7,9 @@
   [comboBox1 addItemWithObjectValue:@"item2"];
   [comboBox1 addItemWithObjectValue:@"item3"];
   [comboBox1 setTarget:self];
-  // [[comboBox1 delegate] comboBoxSelectionIsChanging: ];
+  // [comboBox1 reloadData];
+  //[[comboBox1 delegate] comboBoxSelectionIsChanging: ];
   // [comboBox1 setDelegate:self];
-  [comboBox2 setAction:@selector(OnComboBox1SelectedItemChange)];
   [comboBox1 selectItemAtIndex:0];
   
   comboBox2 = [[NSComboBox alloc] initWithFrame:NSMakeRect(10, 220, 121, 26)];
@@ -27,7 +18,8 @@
   [comboBox2 addItemWithObjectValue:@"item2"];
   [comboBox2 addItemWithObjectValue:@"item3"];
   [comboBox2 setTarget:self];
-  [comboBox2 setAction:@selector(OnComboBox2SelectedItemChange)];
+  // [comboBox1 reloadData];
+  //[comboBox2 setAction:@selector(OnComboBox2SelectedItemChange)];
   [comboBox2 selectItemAtIndex:1];
   
   [super initWithContentRect:NSMakeRect(100, 100, 300, 300) styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable backing:NSBackingStoreBuffered defer:NO];
@@ -44,13 +36,11 @@
 }
 
 - (IBAction) OnComboBox1SelectedItemChange:(id)sender {
-  NSLog(@"Combo box 1 ");
-  [comboBox1 selectItemAtIndex:[comboBox2 indexOfSelectedItem]];
+  [comboBox2 selectItemAtIndex:[comboBox1 indexOfSelectedItem]];
 }
 
 - (IBAction) OnComboBox2SelectedItemChange:(id)sender {
-  NSLog(@"Combo box 2 ");
-  [comboBox2 selectItemAtIndex:[comboBox1 indexOfSelectedItem]];
+  [comboBox1 selectItemAtIndex:[comboBox2 indexOfSelectedItem]];
 }
 
 - (void)OnComboBox1SelectionIsChanging:(NSNotification *)notification {
@@ -62,8 +52,3 @@
 
 @end
 
-int main(int argc, char* argv[]) {
-  [NSApplication sharedApplication];
-  [[[[Window alloc] init] autorelease] makeMainWindow];
-  [NSApp run];
-}
