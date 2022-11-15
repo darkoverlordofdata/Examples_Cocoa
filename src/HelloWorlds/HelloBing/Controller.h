@@ -8,7 +8,7 @@
     Window *window;
 }
 
-- (void)applicationWillFinishLaunching:(NSNotification *) not;
+// - (void)applicationWillFinishLaunching:(NSNotification *) not;
 - (void)applicationDidFinishLaunching:(NSNotification *) not;
 
 

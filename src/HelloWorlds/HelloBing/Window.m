@@ -1,5 +1,5 @@
 #import <Cocoa/Cocoa.h>
-#import <NSPatch/NSPatch.h>
+#import "../../../NSPatch/NSPatch.h"
 
 #import "Window.h"
 
@@ -9,16 +9,16 @@
 	[NSApp setMainMenu:[[[NSMenu alloc] init] autorelease]];
 
 	[[NSApp mainMenu] setSubmenu: [NSMenu new] forItem:[[NSApp mainMenu] addItemWithTitle: NSLocalizedString(@"File", @"") action:NULL keyEquivalent: @""]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Get POD"] , nil) action:@selector(fileGetPOD:) keyEquivalent:@""] autorelease]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Open"] , nil) action:@selector(fileOpen:) keyEquivalent:@""] autorelease]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[NSMenuItem separatorItem]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Save"] , nil) action:@selector(fileSave:) keyEquivalent:@""] autorelease]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Close"] , nil) action:@selector(fileClose:) keyEquivalent:@""] autorelease]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[NSMenuItem separatorItem]];
-	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Quit"] , nil) action:@selector(terminate:) keyEquivalent:@"q"] autorelease]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Get POD"] , nil) action:@selector(fileGetPOD:) keyEquivalent:@""] autorelease]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Open"] , nil) action:@selector(fileOpen:) keyEquivalent:@""] autorelease]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[NSMenuItem separatorItem]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Save"] , nil) action:@selector(fileSave:) keyEquivalent:@""] autorelease]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Close"] , nil) action:@selector(fileClose:) keyEquivalent:@""] autorelease]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[NSMenuItem separatorItem]];
+	[[[[NSApp mainMenu] itemArray][0] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"Quit"] , nil) action:@selector(terminate:) keyEquivalent:@"q"] autorelease]];
 
 	[[NSApp mainMenu] setSubmenu: [NSMenu new] forItem:[[NSApp mainMenu] addItemWithTitle: NSLocalizedString(@"Help", @"") action:NULL keyEquivalent: @""]];
-	[[[[NSApp mainMenu] itemArray][2] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"About"] , nil) action:@selector(orderFrontStandardAboutPanel:) keyEquivalent:@"o"] autorelease]];
+	[[[[NSApp mainMenu] itemArray][1] submenu] addItem:[[[NSMenuItem alloc] initWithTitle:NSLocalizedString([NSString stringWithUTF8String:"About"] , nil) action:@selector(orderFrontStandardAboutPanel:) keyEquivalent:@"o"] autorelease]];
 
 
   pictureBox1 = [[[NSImageView alloc] initWithFrame:NSMakeRect(10, 10, 280, 280)] autorelease];

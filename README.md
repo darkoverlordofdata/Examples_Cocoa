@@ -19,11 +19,11 @@ Recomended settings:
 ```
 defaults write NSGlobalDomain GSUseIconManager NO
 defaults write NSGlobalDomain GSSuppressAppIcon YES
-
+defaults write NSGlobalDomain NSMenuInterfaceStyle NSNextStepInterfaceStyle
+```
+alternate menu styles are broken, use at your own risk:
+```
 defaults write NSGlobalDomain NSMenuInterfaceStyle NSMacintoshInterfaceStyle
-
-or 
-
 defaults write NSGlobalDomain NSMenuInterfaceStyle NSWindows95InterfaceStyle
 ```
 
@@ -47,6 +47,7 @@ Modified to work using GNUstep on FreeBSD and Linux
 * Application
 * Button
 * CheckBox
+* ComboBox
 * Label
 * ListBox
 * PictureBox
@@ -76,5 +77,4 @@ Modified to work using GNUstep on FreeBSD and Linux
 
 * ApplicationWithMessageLoop: use of undeclared identifier (EVENTS)
 * ApplicationIdle: uses Mach
-* ComboBox - no content
 * ColoredTabPages: No CALayer support in  GNUstep
