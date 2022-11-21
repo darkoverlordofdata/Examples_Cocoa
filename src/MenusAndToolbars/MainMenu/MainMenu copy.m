@@ -37,53 +37,53 @@ NSMenuItem *addItemToMenu(NSMenu *menu, NSString *str,
 #ifdef __EXPERIMENTAL__
 	NSMenu *mainmenu;
 	NSMenu *menu;
-	id<NSMenuItem> menuItem;
+	NSMenuItem *menuItem;
 	
 	// Main
 	mainmenu = AUTORELEASE ([[NSMenu alloc] initWithTitle: @"Main Menu"]);
 	
 	// Info 	
-	menuItem = [mainmenu addItemWithTitle:@"Info" action:nil keyEquivalent:@""];
+	menuItem = addItemToMenu(mainmenu, @"Info", @"", nil, @"");
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];
 	RELEASE (menu);
-	[menu addItemWithTitle:@"Info Panel..." action:NSSelectorFromString(@"orderFrontStandardInfoPanel:") keyEquivalent:@""];
-	[menu addItemWithTitle:@"Help..." action:nil keyEquivalent:@"?"]; 
+	addItemToMenu(menu, @"Info Panel...", @"", @"orderFrontStandardInfoPanel:", @"");
+	addItemToMenu(menu, @"Help...", @"", nil, @"?"); 
   
 	// Edit
-	menuItem = [mainmenu addItemWithTitle:@"Edit" action:nil keyEquivalent:@""];
+	menuItem = addItemToMenu(mainmenu, @"Edit", @"", nil, @"");
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];	
 	RELEASE (menu);
-	[menu addItemWithTitle:@"Cut" action:NSSelectorFromString(@"cut:") keyEquivalent:@"x"];
-	[menu addItemWithTitle:@"Copy" action:NSSelectorFromString(@"copy:") keyEquivalent:@"c"];
-	[menu addItemWithTitle:@"Paste" action:NSSelectorFromString(@"paste:") keyEquivalent:@"v"];
-	[menu addItemWithTitle:@"Select All" action:NSSelectorFromString(@"selectAll:") keyEquivalent:@"a"];
+	addItemToMenu(menu, @"Cut", @"", @"cut:", @"x");
+	addItemToMenu(menu, @"Copy", @"", @"copy:", @"c");
+	addItemToMenu(menu, @"Paste", @"", @"paste:", @"v");
+	addItemToMenu(menu, @"Select All", @"", @"selectAll:", @"a");
 		
 	// Windows
-	menuItem = [mainmenu addItemWithTitle:@"Windows" action:nil keyEquivalent:@""];
+	menuItem = addItemToMenu(mainmenu, @"Windows", @"", nil, @"");
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];		
 	RELEASE (menu);
-	[menu addItemWithTitle:@"Arrange in Front" action:NSSelectorFromString(@"arrangeInFront:") keyEquivalent:@""];
-	[menu addItemWithTitle:@"Miniaturize Window" action:NSSelectorFromString(@"performMiniaturize:") keyEquivalent:@"m"];
-	[menu addItemWithTitle:@"Close Window" action:NSSelectorFromString(@"performClose:") keyEquivalent:@"w"];
+	addItemToMenu(menu, @"Arrange in Front", @"", @"arrangeInFront:", @"");
+	addItemToMenu(menu, @"Miniaturize Window", @"", @"performMiniaturize:", @"m");
+	addItemToMenu(menu, @"Close Window", @"", @"performClose:", @"w");
   [[NSApplication sharedApplication] setWindowsMenu: menu];
 
 	// Services 
-	menuItem = [mainmenu addItemWithTitle:@"Services" action:nil keyEquivalent:@""];
+	menuItem = addItemToMenu(mainmenu, @"Services", @"", nil, @"");
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];		
 	RELEASE (menu);
 	[[NSApplication sharedApplication] setServicesMenu: menu];
 
 	// Hide
-	[mainmenu addItemWithTitle:@"Hide" action:NSSelectorFromString(@"hide:") keyEquivalent:@"h"];
-	[mainmenu addItemWithTitle:@"Hide Others" action:NSSelectorFromString(@"hideOtherApplications:") keyEquivalent:@"H"];
-	[mainmenu addItemWithTitle:@"Show All" action:NSSelectorFromString(@"unhideAllApplications:") keyEquivalent:@""];
+	addItemToMenu(mainmenu, @"Hide", @"", @"hide:", @"h");
+	addItemToMenu(mainmenu, @"Hide Others", @"", @"hideOtherApplications:", @"H");
+	addItemToMenu(mainmenu, @"Show All", @"", @"unhideAllApplications:", @"");
 	
 	// Quit
-	[mainmenu addItemWithTitle:@"Quit" action:NSSelectorFromString(@"terminate:") keyEquivalent:@"q"];
+	addItemToMenu(mainmenu, @"Quit", @"", @"terminate:", @"q");
 
 	[[NSApplication sharedApplication] setMainMenu: mainmenu];		
   
@@ -99,7 +99,7 @@ NSMenuItem *addItemToMenu(NSMenu *menu, NSString *str,
   [[[[NSApp mainMenu] itemArray][0] submenu] addItemWithTitle:@"Preferences" action:NSSelectorFromString(@"") keyEquivalent:@""];
   [[[[NSApp mainMenu] itemArray][0] submenu] addItem:[NSMenuItem separatorItem]];
   [[[[NSApp mainMenu] itemArray][0] submenu] addItemWithTitle:@"Services" action:NSSelectorFromString(nil) keyEquivalent:@""];
-
+  
   [[[[NSApp mainMenu] itemArray][0] submenu] addItem:[NSMenuItem separatorItem]];
   [[[[NSApp mainMenu] itemArray][0] submenu] addItemWithTitle:@"Hide MainMenu" action:NSSelectorFromString(@"hide:") keyEquivalent:@"h"];
   [[[[NSApp mainMenu] itemArray][0] submenu] addItemWithTitle:@"Hide Others" action:NSSelectorFromString(@"hideOtherApplications:") keyEquivalent:@"H"];

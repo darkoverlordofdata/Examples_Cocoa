@@ -33,6 +33,8 @@ git clone https://github.com/gnustep/plugins-themes-nesedahrik
 cd plugins-themes-nesedahrik
 cp NesedahRik.theme ~/GNUstep/Library/Themes
 defaults write NSGlobalDomain GSTheme NesedahRik
+
+defaults write NSGlobalDomain GSTheme NarcissusRik
 ```
 Modified to work using GNUstep on FreeBSD and Linux
 
