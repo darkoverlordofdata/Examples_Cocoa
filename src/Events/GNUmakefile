@@ -27,7 +27,8 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # The list of subproject directories
 #
-SUBPROJECTS = Applicationidle Drawing WindowAndMessages
+# SUBPROJECTS = ApplicationIdle Drawing WindowAndMessages
+SUBPROJECTS = Drawing WindowAndMessages
 
 -include Makefile.preamble
 

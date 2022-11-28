@@ -28,7 +28,8 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # The list of subproject directories
 #
-SUBPROJECTS = ColoredTabPages
+# SUBPROJECTS = ColoredTabPages
+SUBPROJECTS = Controller ControllerComboBox
 
 -include Makefile.preamble
 

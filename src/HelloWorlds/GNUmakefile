@@ -27,7 +27,7 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # The list of subproject directories
 #
-SUBPROJECTS = Application
+SUBPROJECTS = HelloBing HelloWorld
 
 -include Makefile.preamble
 

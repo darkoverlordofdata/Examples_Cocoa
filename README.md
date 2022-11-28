@@ -10,7 +10,7 @@ I Install GNUstep using https://github.com/plaurent/gnustep-build. Why not the v
 
 On FreeBSD there is no gcc version, so just install gnustep and gmake from the repo:
 ```
-sudo pkg install gmame gnustep
+sudo pkg install gmake gnustep
 ```
 
 On FreeBSD, use gmake. On linux, use make.

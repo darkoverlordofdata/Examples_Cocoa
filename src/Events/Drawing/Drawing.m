@@ -1,5 +1,5 @@
 #include <Cocoa/Cocoa.h>
-#import <NSPatch/NSPatch.h>
+#import "../../../NSPatch/NSPatch.h"
 
 @interface Window : NSWindow
 - (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)backingStoreType defer:(BOOL)flag;

@@ -1,5 +1,5 @@
 #include <Cocoa/Cocoa.h>
-#import <NSPatch/NSPatch.h>
+#import "../../../NSPatch/NSPatch.h"
 #include <AppKit/AppKit.h>
 #include <syslog.h>
 
