@@ -25,7 +25,7 @@
   [label setDrawsBackground:NO];
   [label setEditable:NO];
   [label setSelectable:NO];
-  [label setTextColor:[NSColor colorWithRed:0.117 green:0.565 blue:1.0 alpha:1.0]];
+  [label setTextColor:[NSColor colorWithCalibratedRed:0.117 green:0.565 blue:1.0 alpha:1.0]];
   [label setFont:[[NSFontManager sharedFontManager] convertFont:[[NSFontManager sharedFontManager] convertFont:[NSFont fontWithName:@"Arial" size:64] toHaveTrait:NSFontBoldTrait] toHaveTrait:NSFontItalicTrait]];
 
   button = [[[NSButton alloc] initWithFrame:NSMakeRect(10, 10, 90, 32)] autorelease];

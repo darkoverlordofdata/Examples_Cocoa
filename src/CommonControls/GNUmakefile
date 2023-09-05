@@ -27,7 +27,8 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 # The list of subproject directories
 #
-SUBPROJECTS = Button CheckBox ComboBox Label ListBox PictureBox ProgressBar RadioButton SwitchButton TextBox ToggleButton TrackBar
+# SUBPROJECTS = Button CheckBox ComboBox Label ListBox PictureBox ProgressBar RadioButton SwitchButton TextBox ToggleButton TrackBar
+SUBPROJECTS = Button CheckBox ComboBox Label ListBox PictureBox ProgressBar RadioButton  TextBox ToggleButton TrackBar
 
 -include Makefile.preamble
 

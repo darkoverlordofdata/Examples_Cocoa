@@ -73,6 +73,7 @@
     case NSControlStateValueOff: return @"Unchecked";
     case NSControlStateValueOn: return @"Checked";
     case NSControlStateValueMixed: return @"Mixed";
+    default: return @"Mixed";
   }
 }
 @end

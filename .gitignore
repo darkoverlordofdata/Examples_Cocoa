@@ -3,6 +3,7 @@ build
 build*
 lib
 obj
+.cache
 
 # macOS files
 .DS_Store

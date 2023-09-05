@@ -43,15 +43,15 @@ NSMenuItem *addItemToMenu(NSMenu *menu, NSString *str,
 	mainmenu = AUTORELEASE ([[NSMenu alloc] initWithTitle: @"Main Menu"]);
 	
 	// Info 	
-	menuItem = [mainmenu addItemWithTitle:@"Info" action:nil keyEquivalent:@""];
+	menuItem = [mainmenu addItemWithTitle:@"Info" action:(SEL)nil keyEquivalent:@""];
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];
 	RELEASE (menu);
 	[menu addItemWithTitle:@"Info Panel..." action:NSSelectorFromString(@"orderFrontStandardInfoPanel:") keyEquivalent:@""];
-	[menu addItemWithTitle:@"Help..." action:nil keyEquivalent:@"?"]; 
+	[menu addItemWithTitle:@"Help..." action:(SEL)nil keyEquivalent:@"?"]; 
   
 	// Edit
-	menuItem = [mainmenu addItemWithTitle:@"Edit" action:nil keyEquivalent:@""];
+	menuItem = [mainmenu addItemWithTitle:@"Edit" action:(SEL)nil keyEquivalent:@""];
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];	
 	RELEASE (menu);
@@ -61,7 +61,7 @@ NSMenuItem *addItemToMenu(NSMenu *menu, NSString *str,
 	[menu addItemWithTitle:@"Select All" action:NSSelectorFromString(@"selectAll:") keyEquivalent:@"a"];
 		
 	// Windows
-	menuItem = [mainmenu addItemWithTitle:@"Windows" action:nil keyEquivalent:@""];
+	menuItem = [mainmenu addItemWithTitle:@"Windows" action:(SEL)nil keyEquivalent:@""];
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];		
 	RELEASE (menu);
@@ -71,7 +71,7 @@ NSMenuItem *addItemToMenu(NSMenu *menu, NSString *str,
   [[NSApplication sharedApplication] setWindowsMenu: menu];
 
 	// Services 
-	menuItem = [mainmenu addItemWithTitle:@"Services" action:nil keyEquivalent:@""];
+	menuItem = [mainmenu addItemWithTitle:@"Services" action:(SEL)nil keyEquivalent:@""];
 	menu = [NSMenu new];
 	[mainmenu setSubmenu: menu forItem: menuItem];		
 	RELEASE (menu);
