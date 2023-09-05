@@ -13,7 +13,7 @@
 
 @implementation Window
 - (instancetype)init {
-  NSTabViewItem* tabPage1 = [[NSTabViewItem alloc] init];
+  tabPage1 = [[NSTabViewItem alloc] init];
   [tabPage1 setLabel:@"tabPage1"];
   
   tabPage2 = [[NSTabViewItem alloc] init];
