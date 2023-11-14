@@ -46,7 +46,9 @@
 #define NSTabPositionBottom 3
 #define NSTabPositionRight 4
 
-typedef NSInteger NSControlStateValue;
-#define NSControlStateValueOn 1
-#define NSControlStateValueOff 0
-#define NSControlStateValueMixed -1
+// #ifndef NSControlStateValue
+// typedef NSInteger NSControlStateValue;
+// #define NSControlStateValueOn 1
+// #define NSControlStateValueOff 0
+// #define NSControlStateValueMixed -1
+// #endif

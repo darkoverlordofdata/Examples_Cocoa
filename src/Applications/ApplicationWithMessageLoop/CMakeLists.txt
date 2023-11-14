@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 # Project
 Project(ApplicationWithMessageLoop VERSION 1.0.0)
+
 find_library(COCOA_LIBRARY Cocoa)
 
 # Options

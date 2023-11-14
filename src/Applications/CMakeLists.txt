@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required ( VERSION 3.16 )
 
-project(Applications)
-find_library(COCOA_LIBRARY Cocoa)
+project ( Applications )
 
-add_subdirectory(Application)
-add_subdirectory(ApplicationWithMessageLoop)
+add_subdirectory ( Application )
+add_subdirectory ( ApplicationWithMessageLoop )

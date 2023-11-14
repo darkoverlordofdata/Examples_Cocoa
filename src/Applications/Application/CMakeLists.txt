@@ -1,16 +1,19 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required ( VERSION 3.16 )
 
 # Project
-Project(Application VERSION 1.0.0)
-find_library(COCOA_LIBRARY Cocoa)
+project ( application VERSION 1.0.0 )
+set ( VERSION 1.0.0 )
+set ( RELEASE_NAME application )
+set ( PROJECT_NAME application )
+set ( APP_NAME "Application" )
+set ( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 
-# Options
-set(MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION})
-set(MACOSX_BUNDLE_COPYRIGHT "© 2020 by Gammasoft")
-set(MACOSX_BUNDLE_INFO_STRING "This example shows how to use Cocoa Application")
-set(MACOSX_BUNDLE_GUI_IDENTIFIER "org.gammasoft.CocoaExamples.Application")
+find_package ( GNUstep REQUIRED )
+
+link_directories ( GNUSTEP_LIBRARY_DIRS )
+include_directories ( AFTER #{GNUSTEP_INCLUDE_DIRS}) 
 
 # Application
-add_executable(${PROJECT_NAME} MACOSX_BUNDLE Application.m)
-target_link_libraries(${PROJECT_NAME} ${COCOA_LIBRARY})
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Applications")
+add_executable(${APP_NAME} Application.m)
+target_link_libraries(${APP_NAME} ${GNUSTEP_LIBRARIES})
+# set_target_properties(${APP_NAME} PROPERTIES FOLDER "Applications")
