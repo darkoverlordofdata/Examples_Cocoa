@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/usr/home/darko/GitHub/Examples_Cocoa/src/Applications/Application",
+  "command": "/usr/bin/cc  -I/usr/home/darko/GitHub/Examples_Cocoa/src/Applications/Application/. -I/usr/local/include -I/home/darko/GNUstep/Library/Headers -I/usr/GNUstep/Local/Library/Headers -I/usr/GNUstep/System/Library/Headers -I/usr/local/GNUstep/Local/Library/Headers -I/usr/local/GNUstep/System/Library/Headers -x objective-c  -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_GUI_LIBRARY=1 -DGNUSTEP_RUNTIME=1 -D_NONFRAGILE_ABI=1 -DGNUSTEP_BASE_LIBRARY=1 -fno-strict-aliasing -fexceptions -fobjc-exceptions -D_NATIVE_OBJC_EXCEPTIONS -pthread -fPIC -Wall -DGSWARN -DGSDIAGNOSE -Wno-import -g -O2 -fobjc-runtime=gnustep-2.0 -DOBJC_RUNTIME=20 -fblocks -fconstant-string-class=NSConstantString -pthread -fexceptions -fobjc-runtime=gnustep-2.1 -fblocks -std=gnu17 -o CMakeFiles/Application.dir/Application.m.o -c /usr/home/darko/GitHub/Examples_Cocoa/src/Applications/Application/Application.m",
+  "file": "/usr/home/darko/GitHub/Examples_Cocoa/src/Applications/Application/Application.m",
+  "output": "CMakeFiles/Application.dir/Application.m.o"
+}
+]
